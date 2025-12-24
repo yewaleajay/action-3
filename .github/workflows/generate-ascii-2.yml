@@ -44,8 +44,8 @@ jobs:
       #   with:
       #     name: dragon text file
 
-      # - name: Read file
-      #   run: cat dragon.txt
+      - name: Read file
+        run: cat dragon.txt
 
       - name: Deploy
         run: echo Deploying... ...
