@@ -1,4 +1,4 @@
-name: Genrate Ascii Artwork
+name: Genrate Ascii Artwork-2
 on:
   push:
 jobs:
