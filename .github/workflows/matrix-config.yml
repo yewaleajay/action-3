@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         # version: [10, 12, 14]
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
         image: [hello-world, alpine]
     runs-on: ${{ matrix.os }}
     steps:
