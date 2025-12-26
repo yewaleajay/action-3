@@ -1,5 +1,6 @@
 name: Context testing
 on: 
+  push:
   workflow_dispatch:
 
 jobs:
