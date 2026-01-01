@@ -22,13 +22,14 @@ jobs:
           - name: Checkout Repository
             uses: actions/checkout@v4
 
-          - name: Install Terraform Docs
-            uses: terraform-docs/gh-actions@main  # Action to generate Terraform documentation
-              with:
-                working_dir: .  # Use the current directory (adjust if needed)
-                output-file: README.md  # Update the README file with generated docs
-                output-method: inject  # Inject the documentation into the README
-                git-push: "true"
+          - name: Render terraform docs and push changes
+            uses: terraform-docs/gh-actions@v1.3.0 # Pinned version
+            with:
+              working-dir: .
+              output-file: README.md
+              output-method: inject
+              git-push: "true"
+              git-commit-message: "docs: automated terraform-docs update"
             
     #       - name: Genrate README content
     #         run: |
