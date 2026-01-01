@@ -1,4 +1,4 @@
-name: exploring workflow filters and Acyivities
+name: exploring workflow filters and Acyivities (Auto-update the README.md)
 on:
     workflow_dispatch: 
     push:
@@ -49,5 +49,6 @@ jobs:
     #     runs-on: ubuntu-latest
     #     steps:
     #     - run: echo this workflow/jobs/step is executed for event type - $ {{ github.event_name }}
+
 
 
